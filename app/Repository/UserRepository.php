@@ -1,8 +1,8 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Repository;
+namespace Iqbal\LoginManagement\Repository;
 
-use Iqbal\Belajar\PHP\MVC\Domain\User;
+use Iqbal\LoginManagement\Domain\User;
 use PDO;
 
 class UserRepository

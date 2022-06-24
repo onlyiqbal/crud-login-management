@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Exception;
+namespace Iqbal\LoginManagement\Exception;
 
 use Exception;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Domain;
+namespace Iqbal\LoginManagement\Domain;
 
 class Session
 {

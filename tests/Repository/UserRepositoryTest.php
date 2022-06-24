@@ -2,8 +2,10 @@
 
 namespace Iqbal\Belajar\PHP\MVC\Repository;
 
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Domain\User;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Domain\User;
+use Iqbal\LoginManagement\Repository\SessionRepository;
+use Iqbal\LoginManagement\Repository\UserRepository;
 use PHPUnit\Framework\TestCase;
 
 class UserRepositoryTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Middleware;
+namespace Iqbal\LoginManagement\Middleware;
 
 interface Middleware
 {

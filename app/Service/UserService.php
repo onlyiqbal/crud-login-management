@@ -1,20 +1,19 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Service;
+namespace Iqbal\LoginManagement\Service;
 
-use Exception;
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Domain\User;
-use Iqbal\Belajar\PHP\MVC\Exception\ValidationException;
-use Iqbal\Belajar\PHP\MVC\Model\UserLoginRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserLoginResponse;
-use Iqbal\Belajar\PHP\MVC\Model\UserPasswordUpdateRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserPasswordUpdateResponse;
-use Iqbal\Belajar\PHP\MVC\Model\UserProfileUpdateRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserProfileUpdateResponse;
-use Iqbal\Belajar\PHP\MVC\Model\UserRegisterRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserRegisterResponse;
-use Iqbal\Belajar\PHP\MVC\Repository\UserRepository;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Domain\User;
+use Iqbal\LoginManagement\Exception\ValidationException;
+use Iqbal\LoginManagement\Model\UserLoginRequest;
+use Iqbal\LoginManagement\Model\UserLoginResponse;
+use Iqbal\LoginManagement\Model\UserPasswordUpdateRequest;
+use Iqbal\LoginManagement\Model\UserPasswordUpdateResponse;
+use Iqbal\LoginManagement\Model\UserProfileUpdateRequest;
+use Iqbal\LoginManagement\Model\UserProfileUpdateResponse;
+use Iqbal\LoginManagement\Model\UserRegisterRequest;
+use Iqbal\LoginManagement\Model\UserRegisterResponse;
+use Iqbal\LoginManagement\Repository\UserRepository;
 
 class UserService
 {

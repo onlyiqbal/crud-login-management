@@ -2,15 +2,16 @@
 
 namespace Iqbal\Belajar\PHP\MVC\Service;
 
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Domain\User;
-use Iqbal\Belajar\PHP\MVC\Exception\ValidationException;
-use Iqbal\Belajar\PHP\MVC\Model\UserLoginRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserPasswordUpdateRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserProfileUpdateRequest;
-use Iqbal\Belajar\PHP\MVC\Model\UserRegisterRequest;
-use Iqbal\Belajar\PHP\MVC\Repository\SessionRepository;
-use Iqbal\Belajar\PHP\MVC\Repository\UserRepository;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Domain\User;
+use Iqbal\LoginManagement\Exception\ValidationException;
+use Iqbal\LoginManagement\Model\UserLoginRequest;
+use Iqbal\LoginManagement\Model\UserPasswordUpdateRequest;
+use Iqbal\LoginManagement\Model\UserProfileUpdateRequest;
+use Iqbal\LoginManagement\Model\UserRegisterRequest;
+use Iqbal\LoginManagement\Repository\SessionRepository;
+use Iqbal\LoginManagement\Repository\UserRepository;
+use Iqbal\LoginManagement\Service\UserService;
 use PHPUnit\Framework\TestCase;
 
 class UserServiceTest extends TestCase

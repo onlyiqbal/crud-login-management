@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Model;
+namespace Iqbal\LoginManagement\Model;
 
 class UserPasswordUpdateRequest
 {

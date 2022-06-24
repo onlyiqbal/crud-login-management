@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Config;
+namespace Iqbal\LoginManagement\Config;
 
 use PDO;
 

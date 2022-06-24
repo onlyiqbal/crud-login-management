@@ -1,8 +1,8 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Model;
+namespace Iqbal\LoginManagement\Model;
 
-use Iqbal\Belajar\PHP\MVC\Domain\User;
+use Iqbal\LoginManagement\Domain\User;
 
 class UserPasswordUpdateResponse
 {

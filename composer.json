@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Iqbal\\Belajar\\PHP\\MVC\\": "app"
+            "Iqbal\\LoginManagement\\": "app"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Iqbal\\Belajar\\PHP\\MVC\\": "tests"
+            "Iqbal\\LoginManagement\\": "tests"
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\App;
+namespace Iqbal\LoginManagement\App;
 
 
 class View

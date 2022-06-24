@@ -1,13 +1,12 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Middleware;
+namespace Iqbal\LoginManagement\Middleware;
 
-use DateTime;
-use Iqbal\Belajar\PHP\MVC\App\View;
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Repository\SessionRepository;
-use Iqbal\Belajar\PHP\MVC\Repository\UserRepository;
-use Iqbal\Belajar\PHP\MVC\Service\SessionService;
+use Iqbal\LoginManagement\App\View;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Repository\SessionRepository;
+use Iqbal\LoginManagement\Repository\UserRepository;
+use Iqbal\LoginManagement\Service\SessionService;
 
 class MustLoginMiddleware implements Middleware
 {

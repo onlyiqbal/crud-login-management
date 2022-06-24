@@ -4,11 +4,12 @@ namespace Iqbal\Belajar\PHP\MVC\Service;
 
 require_once __DIR__ . "/../Helper/helper.php";
 
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Domain\Session;
-use Iqbal\Belajar\PHP\MVC\Domain\User;
-use Iqbal\Belajar\PHP\MVC\Repository\SessionRepository;
-use Iqbal\Belajar\PHP\MVC\Repository\UserRepository;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Domain\Session;
+use Iqbal\LoginManagement\Domain\User;
+use Iqbal\LoginManagement\Repository\SessionRepository;
+use Iqbal\LoginManagement\Repository\UserRepository;
+use Iqbal\LoginManagement\Service\SessionService;
 use PHPUnit\Framework\TestCase;
 
 class SessionServiceTest extends TestCase

@@ -1,11 +1,11 @@
 <?php
 
-namespace Iqbal\Belajar\PHP\MVC\Service;
+namespace Iqbal\LoginManagement\Service;
 
-use Iqbal\Belajar\PHP\MVC\Domain\Session;
-use Iqbal\Belajar\PHP\MVC\Domain\User;
-use Iqbal\Belajar\PHP\MVC\Repository\SessionRepository;
-use Iqbal\Belajar\PHP\MVC\Repository\UserRepository;
+use Iqbal\LoginManagement\Domain\Session;
+use Iqbal\LoginManagement\Domain\User;
+use Iqbal\LoginManagement\Repository\SessionRepository;
+use Iqbal\LoginManagement\Repository\UserRepository;
 
 class SessionService
 {

@@ -2,12 +2,12 @@
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use Iqbal\Belajar\PHP\MVC\App\Router;
-use Iqbal\Belajar\PHP\MVC\Config\Database;
-use Iqbal\Belajar\PHP\MVC\Controller\HomeController;
-use Iqbal\Belajar\PHP\MVC\Controller\UserController;
-use Iqbal\Belajar\PHP\MVC\Middleware\MustLoginMiddleware;
-use Iqbal\Belajar\PHP\MVC\Middleware\MustNotLoginMiddleware;
+use Iqbal\LoginManagement\App\Router;
+use Iqbal\LoginManagement\Config\Database;
+use Iqbal\LoginManagement\Controller\HomeController;
+use Iqbal\LoginManagement\Controller\UserController;
+use Iqbal\LoginManagement\Middleware\MustLoginMiddleware;
+use Iqbal\LoginManagement\Middleware\MustNotLoginMiddleware;
 
 Database::getConnection('prod');
 
