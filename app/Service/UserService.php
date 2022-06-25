@@ -61,16 +61,16 @@ class UserService
           }
      }
 
-     public function login(UserLoginRequest $requst): UserLoginResponse
+     public function login(UserLoginRequest $reqeust): UserLoginResponse
      {
-          $this->validateUserLoginRequest($requst);
+          $this->validateUserLoginRequest($reqeust);
 
-          $user = $this->userRepository->findById($requst->id);
+          $user = $this->userRepository->findById($reqeust->id);
           if ($user == null) {
                throw new ValidationException("Id atau password salah");
           }
 
-          if (password_verify($requst->password, $user->password)) {
+          if (password_verify($reqeust->password, $user->password)) {
                $response = new UserLoginResponse();
                $response->user = $user;
                return $response;
