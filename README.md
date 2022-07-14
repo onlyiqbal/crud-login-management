@@ -1,6 +1,12 @@
 # Aplikasi Login Management
 ## Aplikasi CRUD Login Management PHP Native
-## Cara menggunakan aplikasi :
+## Spesifikasi Aplikasi :
+- Menggunakan konsep MVC
+- Menggunakan Repository Pattern
+- PHP Native
+- Database MySQL
+- Server : PHP Development Server
+## Panduan Instalasi :
 - Clone repository ini atau download file zip.
 - Buat dua database, database "php_login_management" dan "php_login_management_test" (unit test).
 - Import file sql script yang terdapat didalam projectnaya sesuai dengan nama databasenya.

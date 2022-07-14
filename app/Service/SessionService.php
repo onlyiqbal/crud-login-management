@@ -12,7 +12,6 @@ class SessionService
      public static string $COOKIE_NAME = "X-IQBAL-SESSION";
 
      private SessionRepository $sessionRepository;
-
      private UserRepository $userRepository;
 
      public function __construct(SessionRepository $sessionRepository, UserRepository $userRepository)
@@ -26,7 +25,6 @@ class SessionService
           $session = new Session();
           $session->id = uniqid();
           $session->userId = $userId;
-
           $this->sessionRepository->save($session);
 
           setcookie(self::$COOKIE_NAME, $session->id, time() + (60 * 60 * 24 * 30), "/");

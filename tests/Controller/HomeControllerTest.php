@@ -31,7 +31,7 @@ class HomeControllerTest extends TestCase
      {
           $this->homeController->index();
 
-          $this->expectOutputRegex('[Login Management]');
+          $this->expectOutputRegex('[PHP Login Management]');
      }
 
      public function testUserLogin()

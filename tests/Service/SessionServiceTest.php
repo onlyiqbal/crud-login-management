@@ -49,7 +49,6 @@ class SessionServiceTest extends TestCase
           $session = new Session();
           $session->id = uniqid();
           $session->userId = "iqbal";
-
           $this->sessionRepository->save($session);
 
           $_COOKIE[SessionService::$COOKIE_NAME] = $session->id;
@@ -69,8 +68,8 @@ class SessionServiceTest extends TestCase
           $session = new Session();
           $session->id = uniqid();
           $session->userId = "iqbal";
-
           $this->sessionRepository->save($session);
+
           $_COOKIE[SessionService::$COOKIE_NAME] = $session->id;
 
           $user = $this->sessionService->current();
