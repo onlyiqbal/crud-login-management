@@ -1,0 +1,17 @@
+@startuml "Entity Diagram Login Management"
+     entity "Users" as users {
+          * **id : varchar** 
+          --
+          name : varchar
+          --
+          password : varchar
+     }
+
+     entity "Sessions" as sessions {
+          * **id : varchar**
+          --
+          user_id : varchar
+     }
+
+     users |o--|| sessions
+@enduml
