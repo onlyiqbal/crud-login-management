@@ -29,7 +29,7 @@ class Database
           self::$pdo->beginTransaction();
      }
 
-     public static function commitTranscation()
+     public static function commitTransaction()
      {
           self::$pdo->commit();
      }

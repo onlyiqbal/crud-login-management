@@ -124,7 +124,7 @@ class UserController
      {
           $user = $this->sessionService->current();
           View::render("User/password", [
-               'title' => "Upadate user password",
+               'title' => "Update user password",
                'user' => [
                     'id' => $user->id,
                ]

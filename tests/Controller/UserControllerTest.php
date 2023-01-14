@@ -166,7 +166,7 @@ namespace Iqbal\Belajar\PHP\MVC\Controller {
                $this->expectOutputRegex("[Id atau password salah]");
           }
 
-          public function testlogout()
+          public function testLogout()
           {
                $user = new User();
                $user->id = 'iqbal';

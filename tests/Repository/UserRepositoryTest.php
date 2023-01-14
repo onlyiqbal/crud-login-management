@@ -38,7 +38,7 @@ class UserRepositoryTest extends TestCase
           self::assertEquals($user->password, $result->password);
      }
 
-     public function testfindByIdNotFound()
+     public function testFindByIdNotFound()
      {
           $user = $this->userRepository->findById("not found");
           self::assertNull($user);

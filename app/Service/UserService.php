@@ -45,7 +45,7 @@ class UserService
                $response = new UserRegisterResponse();
                $response->user = $user;
 
-               Database::commitTranscation();
+               Database::commitTransaction();
 
                return $response;
           } catch (\Exception $exception) {
@@ -61,16 +61,16 @@ class UserService
           }
      }
 
-     public function login(UserLoginRequest $reqeust): UserLoginResponse
+     public function login(UserLoginRequest $request): UserLoginResponse
      {
-          $this->validateUserLoginRequest($reqeust);
+          $this->validateUserLoginRequest($request);
 
-          $user = $this->userRepository->findById($reqeust->id);
+          $user = $this->userRepository->findById($request->id);
           if ($user == null) {
                throw new ValidationException("Id atau password salah");
           }
 
-          if (password_verify($reqeust->password, $user->password)) {
+          if (password_verify($request->password, $user->password)) {
                $response = new UserLoginResponse();
                $response->user = $user;
                return $response;
@@ -100,7 +100,7 @@ class UserService
                $user->name = $request->name;
                $this->userRepository->update($user);
 
-               Database::commitTranscation();
+               Database::commitTransaction();
 
                $response = new UserProfileUpdateResponse();
                $response->user = $user;
@@ -137,7 +137,7 @@ class UserService
                $user->password = password_hash($request->newPassword, PASSWORD_BCRYPT);
                $this->userRepository->update($user);
 
-               Database::commitTranscation();
+               Database::commitTransaction();
 
                $response = new UserPasswordUpdateResponse();
                $response->user = $user;
